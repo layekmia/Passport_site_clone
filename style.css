@@ -2,6 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   text-decoration: none;
 }
 body{
    font-family: sans-serif;
@@ -11,35 +12,39 @@ html{
 }
 
 
-.container{
-   max-width: 1125px;
-   margin: 0 auto;
-}
-
 header{
    background-color: #2a5f25;
-   height: 100px;
+   min-height: 100px;
    padding: 20px 0;
    position: sticky;
    top: 0;
    z-index: 10;
+   left: 0;
+   right: 0;
+   padding:0 100px ;
+   display: flex;
 }
 header .head-container{
    display: flex;
    align-items: center;
    justify-content: space-between;
+   width: 100%;
+   overflow: hidden;
 }
-.container .logo-container{
+.head-container .logo-container{
    display: flex;
    align-items: center;
-   gap:20px;
+   gap:15px;
    color: white;
-   font-weight: 800;
+   font-weight: 600;
    font-size: 1.5rem;
    line-height: 1.3;
 }
-.container .logo-container:last-child{
+.head-container .logo-container:last-child{
    text-align: end;
+}
+.hidden-toptext{
+   display: none;
 }
 /* Sing menu section */
 .sign-menu-section{
@@ -51,6 +56,7 @@ header .head-container{
    z-index: 5;
 }
 .sign-in-menu {
+   padding: 0 100px;
    height:100%;
    display: flex;
    align-items: center;
@@ -94,6 +100,9 @@ main{
    /* background-repeat: no-repeat; */
    background-size: 117%;
    height: 284px;
+   width: 100%;
+   overflow: hidden;
+   background-size: cover;
 }
 
 main .main-container{
@@ -101,12 +110,13 @@ main .main-container{
    position: relative;
 }
 .header-content{
+   padding: 0 80px;
    position: absolute;
    right: 0;
    top: 30%;
    font-size: 3.3rem;
    font-weight: bold;
-   line-height: 2.1;
+   line-height: 1.8;
    color: #333333;
 }
 
@@ -147,7 +157,7 @@ nav{
    text-align: center;
    cursor: pointer;
 }
-.nav-container li:hover{
+.nav-container li:hover:not(.emergency-doc){
    background-color: #1976d2;
 }
 .nav-container li.active{
@@ -164,6 +174,191 @@ nav{
    line-height: 1.4;
    font-family: Arial, Helvetica, sans-serif;
 }
-.nav-container li:hover a{
+.nav-container li:hover a:not(.emergency-doc a){
    color: white;
+}
+
+.emergency-doc{
+   background-color: #ffecb3;
+}
+.emergency-doc:hover{
+   background-color: #ff8f00;
+}
+.nav-container .emergency-doc a{
+   color: #ff8f00;
+}
+.nav-container .emergency-doc a:hover{
+   color: black;
+}
+
+/* * Instruction section style */
+.instruction-seciton{
+   background-color: #ebeced;
+   padding: 2.5rem 1rem;
+}
+.instruction-boxes{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+.instruction-box{
+   flex-basis: calc(33.3% - 15px);
+   height: 280px;
+   background-color: #fff;
+   padding: 24px 32px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.instruction-box .instruction-panel{
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+   height: 137px;
+}
+
+.instruction-panel .instruction-panel-description{
+   display: flex;
+   flex-direction: column;
+   gap:45px;
+}
+.instruction-panel .instruction-panel-description .instruction-panel-title{
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+.instruction-panel-description .panel-descrip{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 30px;
+}
+.panel-descrip div {
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: #1976d2;
+}
+.panel-descrip img{
+   width: 32px;
+   height: 32px;
+}
+
+/**** Notice board design */
+.notice-board-section{
+   max-width: 1250px;
+   margin: 40px auto 0;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.notice-board-section .notices{
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 20px;
+   
+   margin-left: 100px;
+}
+
+.notices .notice-one{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   flex-basis: 55%;
+}
+.notices .notice-one a{
+   color: #1976d2;
+   text-decoration: underline;
+   font-size: 1.5rem;
+   transition: 0.3s all ease;
+}
+.notices .notice-one a:hover{
+   color: black;
+}
+.notice-one .notice-title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.notice-title p{
+   font-size: 3rem;
+   color: #323437;
+   font-weight: bold;
+}
+
+.instruction-vedio{
+   flex-basis: 45%;
+   background-color: #ebeced;
+   padding: 24px 48px;
+}
+.instruction-vedio h2{
+   font-size:3rem ;
+   font-weight: bold;
+   margin-bottom: 1.6rem;
+}
+.instruction-vedio .video-instruction{
+   margin: 24px 0;
+}
+.video-instruction h4{
+   margin: 24px 0;
+   font-size: 1.5rem;
+}
+.video-instruction .passport-application-instuc{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   font-size: 1.5rem;
+}
+
+.passport-application-instuc a{
+   color: #1976d2;
+   text-decoration: underline;
+}
+.passport-application-instuc a:hover{
+   color: black;
+}
+
+.notice-board-section .questions-instuc{
+   padding: 40px 64px;
+   background-color: #ebeced;
+   width: calc(100% - 100px);
+   border-top: 5px solid #2447a2;
+   font-size: 1.7rem;
+   font-weight: bold;
+}
+.questions-instuc a{
+   color: #1976d2;
+   text-decoration: underline;
+}
+.notice-board-section .country-signing{
+   font-size: 2.25rem;
+   font-weight: bold;
+   color: #1976d2;
+}
+
+/* ** Footer section */
+footer{
+   width: 100%;
+   background-color: #2a5f25;
+   text-align: center;
+   font-size: 1.4rem;
+   color: white;
+   padding: 15px 0;
+}
+footer .footer-instructions{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+}
+.footer-instructions a{
+   color: white;
+   text-decoration: underline;
+}
+.copy-right{
+   margin-top: 8px;
 }
