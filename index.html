@@ -7,12 +7,13 @@
    <link rel="stylesheet" href="style.css">
    <link rel="favicon" type="image/-icon" href="Asset/images.png">
    <link rel="shortcut icon" href="Asset/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="responsive.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>E-Passport Online Registration Portal</title>
 </head>
 <body>
    <header>
-      <div class="container head-container">
+      <div class="head-container">
          <div class="logo-container">
             <div class="logo">
                <img src="https://www.epassport.gov.bd/assets/icons/logo-left-sm.png" alt="">
@@ -22,10 +23,13 @@
                <p>People's Republic of Bangladesh</p>
             </div>
          </div>
-
+         <p class="hidden-toptext">
+            Government of the
+            People's Republic of Bangladesh
+         </p>
          <div class="logo-container">
             <div class="logo-text">
-               <p>Department of</p>
+               <p class="right-text">Department of</p>
                <p>Immigration & Passports</p>
             </div>
             <div class="logo">
@@ -35,7 +39,31 @@
 
       </div>
    </header>
+  
    <!--=====Sign in menu structure ===========-->
+  <section class="sign-menu-section">
+   <div class="sign-in-menu container">
+      <p class="sign-menu-text">Welcome to Bangladesh e-Passport Portal</p>
+      <ul>
+         <li><a href="#">Sign in</a></li>
+         <li><a href="#" class="active english">English</a></li>
+         <li><a href="#" class="bangla">বাংলা</a></li>
+         <li><a href="#" class="ab">A+</a></li>
+         <li><a href="#" class="ab">A-</a></li>
+      </ul>
+   </div>
+  </section>
+
+   <!-- Header section banner image and header text  =============-->
+    <main>
+      <div class="container main-container">
+         <div class="header-content">
+            <p>Welcome to Bangladesh e-Passport <br> Portal</p>
+         </div>
+      </div>
+    </main>
+   <!--======Navigation section  ===========-->
+    <!--=====Sign in menu structure ===========-->
   <section class="sign-menu-section">
    <div class="sign-in-menu container">
       <p class="sign-menu-text">Welcome to Bangladesh e-Passport Portal</p>
@@ -78,7 +106,7 @@
          <li>
             <a href="#">PASSPORT FEES</a>
          </li>
-         <li>
+         <li class="emergency-doc">
             <a href="#">REQUEST EMERGENCY TRAVEL DOCUMENT</a>
          </li>
          <li>
@@ -89,6 +117,164 @@
          </li>
       </div>
    </nav>
+
+   <!--========Main section ============-->
+   <section class="instruction-seciton">
+      <div class="container instruction-boxes">
+           <div class="instruction-box">
+               <div class="instruction-panel">
+                  <div class="instruction-panel-icon">
+                     <img src="Asset/desktop.svg" alt="">
+                  </div>
+                  <div class="instruction-panel-description">
+                     <div class="instruction-panel-title">
+                        Apply Online for e‑Passport / Re‑Issue
+                     </div>
+                     <a href="#" class="panel-descrip">
+                        <div>Directly to online application</div>
+                        <img src="https://www.epassport.gov.bd/assets/icons/keyboard-arrow-right-blue.svg" alt="">
+                     </a>
+                  </div>
+               </div>
+           </div>
+           <div class="instruction-box">
+               <div class="instruction-panel">
+                  <div class="instruction-panel-icon">
+                     <img src="Asset/bar.svg" alt="">
+                  </div>
+                  <div class="instruction-panel-description">
+                     <div class="instruction-panel-title">
+                        5 steps to e‑Passport
+                     </div>
+                     <a href="#" class="panel-descrip">
+                        <div>Information about all application steps</div>
+                        <img src="https://www.epassport.gov.bd/assets/icons/keyboard-arrow-right-blue.svg" alt="">
+                     </a>
+                  </div>
+               </div>
+           </div>
+           <div class="instruction-box">
+               <div class="instruction-panel">
+                  <div class="instruction-panel-icon">
+                     <img src="Asset/urgent.svg" alt="">
+                  </div>
+                  <div class="instruction-panel-description">
+                     <div class="instruction-panel-title">
+                        Urgent applications
+                     </div>
+                     <a href="#" class="panel-descrip">
+                        <div>Need a passport quickly?</div>
+                        <img src="https://www.epassport.gov.bd/assets/icons/keyboard-arrow-right-blue.svg" alt="">
+                     </a>
+                  </div>
+               </div>
+           </div>
+           <div class="instruction-box">
+               <div class="instruction-panel">
+                  <div class="instruction-panel-icon">
+                     <img src="Asset/fees.svg" alt="">
+                  </div>
+                  <div class="instruction-panel-description">
+                     <div class="instruction-panel-title">
+                        Passport fees
+                     </div>
+                     <a href="#" class="panel-descrip">
+                        <div>Payment information and options</div>
+                        <img src="https://www.epassport.gov.bd/assets/icons/keyboard-arrow-right-blue.svg" alt="">
+                     </a>
+                  </div>
+               </div>
+           </div>
+           <div class="instruction-box">
+               <div class="instruction-panel">
+                  <div class="instruction-panel-icon">
+                     <img src="Asset/instructions.svg" alt="">
+                  </div>
+                  <div class="instruction-panel-description">
+                     <div class="instruction-panel-title">
+                        Instructions
+                     </div>
+                     <a href="#" class="panel-descrip">
+                        <div>Have a look before applying</div>
+                        <img src="https://www.epassport.gov.bd/assets/icons/keyboard-arrow-right-blue.svg" alt="">
+                     </a>
+                  </div>
+               </div>
+           </div>
+           <div class="instruction-box">
+               <div class="instruction-panel">
+                  <div class="instruction-panel-icon">
+                     <img src="Asset/document.svg" alt="">
+                  </div>
+                  <div class="instruction-panel-description">
+                     <div class="instruction-panel-title">
+                        Application at RPO Bangladesh Secretariat and Dhaka Cantonment
+                     </div>
+                     <a href="#" class="panel-descrip">
+                        <div>More information</div>
+                        <img src="https://www.epassport.gov.bd/assets/icons/keyboard-arrow-right-blue.svg" alt="">
+                     </a>
+                  </div>
+               </div>
+           </div>
+      </div>
+   </section>
+   <!--=====Notice Container   ============-->
+   <div class="notice-board-section">
+      <div class="notices">
+         <div class="notice-one">
+            <div class="notice-title">
+               <p>Notices</p>
+               <a href="#">All Notices</a>
+            </div>
+
+            <a href="#">Documents Checklist for e-Passport Enrollment</a>
+            <a href="#">Notice on Biometric Enrolment for declaration of General Holiday on 10 Oct 2024</a>
+            <a href="#">Dhaka Cantonment Passport Office Jurisdiction Redistribution of e-Passport Service</a>
+            <a href="#">Special Notice Regarding Narayanganj Regional Passport Office</a>
+            <a href="#">Enrolment of Biometric data for the Citizens older than 06 (six) years.</a>
+         </div>
+
+         <div class="instruction-vedio">
+            <h2>Videos e-Passport</h2>
+            <iframe src="https://www.youtube.com/embed/T4CFehhEbcU?si=Z8KOfWXp4CcNeezA" frameborder="0" width="350px" height="320px"></iframe>
+            
+            <div class="video-instruction">
+               <h4>More Videos</h4>
+               <div class="passport-application-instuc">
+                  <a href="#">e-Passport Application Tutorial</a>
+                  <span>কিভাবে অনলাইনে ই-পাসপোর্ট আবেদন ফরম পূরণ করবেন ?</span>
+                  <a href="#">E-Gate Tutorial</a>
+                  <span>কিভাবে ই-গেইট ব্যবহার করবেন ?</span>
+                  <a href="#">TV Channel</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="questions-instuc">
+         <p>Still have questions? Check our <a href="#">Frequently Asked Questions</a></p>
+      </div>
+      <div class="country-signing">
+         Country Signing Certificate Authority (CSCA)
+      </div>
+      
+   </div>
+
+   <!--============ Footer section ============-->
+   <footer >
+      <div class="footer-instructions">
+         <a href="#">About us</a>
+         <a href="#">Feedback</a>
+         <a href="#">contact</a>
+      </div>
+      <div class="copy-right">
+         <span>© Bangladesh e‑Passport Online Registration Portal, v5.1.0</span>
+      </div>
+   </footer>
+
+
+
    <script src="script.js"></script>
 </body>
 </html>
