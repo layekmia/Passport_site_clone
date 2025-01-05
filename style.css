@@ -1,0 +1,169 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: sans-serif;
+}
+html{
+   font-size: 62.5%;
+}
+
+
+.container{
+   max-width: 1125px;
+   margin: 0 auto;
+}
+
+header{
+   background-color: #2a5f25;
+   height: 100px;
+   padding: 20px 0;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+header .head-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.container .logo-container{
+   display: flex;
+   align-items: center;
+   gap:20px;
+   color: white;
+   font-weight: 800;
+   font-size: 1.5rem;
+   line-height: 1.3;
+}
+.container .logo-container:last-child{
+   text-align: end;
+}
+/* Sing menu section */
+.sign-menu-section{
+   background: transparent;
+   height:50px;
+   position: fixed;
+   left: 0;
+   right: 0;
+   z-index: 5;
+}
+.sign-in-menu {
+   height:100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.sign-in-menu ul {
+   display: flex;
+   align-items: center;
+   list-style: none;
+   background-color: white;
+   height: 100%;
+}
+.sign-in-menu ul a{
+   text-decoration: none;
+   font-size: 1.5rem;
+   color: blue;
+   height: 100%;
+   padding: 10px ;
+}
+.sign-in-menu ul a.active{
+   background-color: blue;
+   color: white;
+}
+.sign-in-menu ul a.ab{
+   font-size: 22px ;
+}
+
+.sign-link-bg-color{
+   background-color: blue;
+}
+.sign-in-menu p{
+   font-size: 20px;
+   color: #323437;
+   font-weight: bold;
+   visibility: hidden;
+}
+
+/* Header section style  */
+main{
+   background-image: url(https://www.epassport.gov.bd/assets/images/main-photo.jpg);
+   /* background-repeat: no-repeat; */
+   background-size: 117%;
+   height: 284px;
+}
+
+main .main-container{
+   height: 100%;
+   position: relative;
+}
+.header-content{
+   position: absolute;
+   right: 0;
+   top: 30%;
+   font-size: 3.3rem;
+   font-weight: bold;
+   line-height: 2.1;
+   color: #333333;
+}
+
+/*===========NAVIGATIONS  */
+
+nav{
+   width: 100%;
+   height: 110px;
+   background: #f7f7f7;
+   position: sticky;
+   top: 148px;
+}
+.nav-container{
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav-container .menu-icon{
+   font-size:3.2rem ;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   padding: 10px;
+}
+.nav-container .menu-icon:hover{
+   background-color: #1976d2;
+
+}
+.nav-container li{
+   list-style-type: none;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 140px;
+   padding: 15px;
+   text-align: center;
+   cursor: pointer;
+}
+.nav-container li:hover{
+   background-color: #1976d2;
+}
+.nav-container li.active{
+   background-color: #e3f3eb;
+}
+.nav-container li.active:hover{
+   background-color: #2a5f25;
+}
+.nav-container li a{
+   text-decoration: none;
+   font-size:1.5rem ;
+   color: #1976d2;
+   font-weight:bold;
+   line-height: 1.4;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.nav-container li:hover a{
+   color: white;
+}
