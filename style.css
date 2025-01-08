@@ -97,7 +97,7 @@ header .head-container{
 /* Header section style  */
 main{
    background-image: url(https://www.epassport.gov.bd/assets/images/main-photo.jpg);
-   /* background-repeat: no-repeat; */
+   background-repeat: no-repeat;
    background-size: 117%;
    height: 284px;
    width: 100%;
